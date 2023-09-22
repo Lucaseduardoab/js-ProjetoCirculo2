@@ -4,7 +4,7 @@ let posicaoVertical; // y
 
 function setup() {
 createCanvas(600, 600);
-  background("white");
+  background("black");
   cor color = (random(0, 255), random(0, 255), random(0, 255));
   posicaoVertical = 300;
 posicaoHorizontal = 300;

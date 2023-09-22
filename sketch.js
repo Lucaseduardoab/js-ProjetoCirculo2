@@ -1,32 +1,7 @@
-let cor;
-let posicaoHorizontal; // x
-let posicaoVertical; // y
+function setup() { createCanvas(600, 600); background("skyblue") }
 
-function setup() {
-createCanvas(600, 600);
-  background("black");
-  cor color = (random(0, 255), random(0, 255), random(0, 255));
-  posicaoVertical = 300;
-posicaoHorizontal = 300;
-}
-function draw() {
- if (mouseIsPressed) circle(posicaoHorizontal, posicaoVertical, 50);
+function draw() { if (mouseIsPressed){ rect(mouseX, mouseY, 20, 10)
 
-if (mousex < posicaoHorizontal) {
-  posicaoHorizontal = posicaoHorizontal random(-2, 4);
-}
-if (mousex > posicaoHorizontal) {
-  posicaoHorizontal = posicaoHorizontal + random(-2, 4); 
-}
-if (mousey < posicaoVertical) {
-  posicaoVertical = posicaoVertical random(-2, 4);
-}
-if (mouseY > posicaoVertical) {
-  posicaoVertical = posicaoVertical + random(-2, 4);
-}
+} fill("black") stroke("black")
 
-fill(cor);
-stroke(cor);
-
-cor color(random(0, 255), random(0, 255), random(0, 255));
 }
